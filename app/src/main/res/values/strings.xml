@@ -27,4 +27,6 @@
     <string name="exit">Exit</string>
     <string name="play_again">Play Again</string>
     <string name="try_again">Try again!</string>
+    <string name="hint_btn_txt">hint</string>
+    <string name="hint_text">Hint: The word starts with the letter \"%s\"</string>
 </resources>

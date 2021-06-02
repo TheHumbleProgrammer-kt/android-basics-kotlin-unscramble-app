@@ -170,9 +170,9 @@ class GameFragment : Fragment() {
         }
     }
 
-    private fun showingHint(shouldShowHint: Boolean) {
+    private fun showingHint(bool: Boolean) {
         val firstLetterOfCurrent = viewModel.getFirstLetter()
-        if (shouldShowHint) {
+        if (viewModel.shouldShowHint(bool)) {
             binding.textViewHint.text = getString(R.string.hint_text, firstLetterOfCurrent)
             binding.textViewHint.visibility = View.VISIBLE
         } else {

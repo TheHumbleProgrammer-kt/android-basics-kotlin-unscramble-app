@@ -72,4 +72,15 @@ class GameViewModel : ViewModel() {
         return currentWord[0].toString()
     }
 
+    private fun decreaseScore() {
+        _score.value = (_score.value)?.minus(SCORE_INCREASE / 2)
+    }
+
+    fun shouldShowHint(bool: Boolean): Boolean {
+        return if (bool) {
+            decreaseScore()
+            true
+        } else false
+    }
+
 }
